@@ -1,0 +1,447 @@
+/**
+ * KhelKud Admin Dashboard - Design Tokens
+ * Comprehensive design system tokens for responsive multi-viewport application
+ */
+
+export const designTokens = {
+  // ============================================================================
+  // BREAKPOINTS
+  // ============================================================================
+  breakpoints: {
+    mobile: {
+      min: '360px',
+      max: '767px',
+      value: 360,
+    },
+    tablet: {
+      portrait: '768px',
+      landscape: '1024px',
+      min: '768px',
+      max: '1279px',
+      value: 768,
+    },
+    desktop: {
+      min: '1280px',
+      max: '1599px',
+      value: 1280,
+    },
+    projector: {
+      min: '1600px',
+      value: 1600,
+    },
+  },
+
+  // ============================================================================
+  // CONTAINER WIDTHS
+  // ============================================================================
+  containers: {
+    mobile: '420px',
+    tablet: '1024px',
+    desktop: '1280px',
+    projector: '1600px',
+  },
+
+  // ============================================================================
+  // GRID SYSTEM
+  // ============================================================================
+  grid: {
+    columns: {
+      mobile: 4,
+      tablet: 8,
+      desktop: 12,
+      projector: 12,
+    },
+    gutters: {
+      mobile: '12px',
+      tablet: '16px',
+      desktop: '24px',
+      projector: '24px',
+    },
+  },
+
+  // ============================================================================
+  // COLOR PALETTE
+  // ============================================================================
+  colors: {
+    // Primary Brand Colors
+    primary: {
+      50: '#FFF4F0',
+      100: '#FFE8DF',
+      200: '#FFD1BF',
+      300: '#FFBA9F',
+      400: '#FF927D',
+      500: '#FF6B3D', // Primary
+      600: '#E6501E',
+      700: '#B33F17',
+      800: '#802D11',
+      900: '#4D1B0A',
+      DEFAULT: '#FF6B3D',
+    },
+
+    // Secondary Colors
+    secondary: {
+      50: '#F5F5F5',
+      100: '#E8E8E8',
+      200: '#D1D1D1',
+      300: '#B3B3B3',
+      400: '#808080',
+      500: '#4D4D4D',
+      600: '#333333',
+      700: '#262626',
+      800: '#1A1A1A', // Secondary
+      900: '#0D0D0D',
+      DEFAULT: '#1A1A1A',
+    },
+
+    // Background Colors
+    background: {
+      primary: '#FFFFFF',
+      secondary: '#F7F7F7',
+      tertiary: '#F0F0F0',
+      dark: '#1A1A1A',
+      DEFAULT: '#F7F7F7',
+    },
+
+    // Text Colors
+    text: {
+      primary: '#1A1A1A',
+      secondary: '#666666',
+      tertiary: '#999999',
+      disabled: '#CCCCCC',
+      inverse: '#FFFFFF',
+      link: '#FF6B3D',
+    },
+
+    // Status Colors
+    success: {
+      50: '#F0FDF4',
+      100: '#DCFCE7',
+      200: '#BBF7D0',
+      300: '#86EFAC',
+      400: '#4ADE80',
+      500: '#22C55E',
+      600: '#16A34A',
+      700: '#15803D',
+      800: '#166534',
+      900: '#14532D',
+      DEFAULT: '#22C55E',
+    },
+
+    warning: {
+      50: '#FFFBEB',
+      100: '#FEF3C7',
+      200: '#FDE68A',
+      300: '#FCD34D',
+      400: '#FBBF24',
+      500: '#F59E0B',
+      600: '#D97706',
+      700: '#B45309',
+      800: '#92400E',
+      900: '#78350F',
+      DEFAULT: '#F59E0B',
+    },
+
+    error: {
+      50: '#FEF2F2',
+      100: '#FEE2E2',
+      200: '#FECACA',
+      300: '#FCA5A5',
+      400: '#F87171',
+      500: '#EF4444',
+      600: '#DC2626',
+      700: '#B91C1C',
+      800: '#991B1B',
+      900: '#7F1D1D',
+      DEFAULT: '#EF4444',
+    },
+
+    info: {
+      50: '#EFF6FF',
+      100: '#DBEAFE',
+      200: '#BFDBFE',
+      300: '#93C5FD',
+      400: '#60A5FA',
+      500: '#3B82F6',
+      600: '#2563EB',
+      700: '#1D4ED8',
+      800: '#1E40AF',
+      900: '#1E3A8A',
+      DEFAULT: '#3B82F6',
+    },
+
+    // Border Colors
+    border: {
+      light: '#E5E5E5',
+      medium: '#CCCCCC',
+      dark: '#999999',
+      DEFAULT: '#E5E5E5',
+    },
+
+    // Overlay & Shadow
+    overlay: 'rgba(0, 0, 0, 0.5)',
+    shadow: 'rgba(0, 0, 0, 0.1)',
+  },
+
+  // ============================================================================
+  // SPACING SCALE
+  // ============================================================================
+  spacing: {
+    0: '0px',
+    1: '4px',
+    2: '8px',
+    3: '12px',
+    4: '16px',
+    5: '20px',
+    6: '24px',
+    7: '28px',
+    8: '32px',
+    10: '40px',
+    12: '48px',
+    14: '56px',
+    16: '64px',
+    20: '80px',
+    24: '96px',
+    28: '112px',
+    32: '128px',
+
+    // Semantic Spacing
+    section: {
+      mobile: '16px',
+      tablet: '20px',
+      desktop: '24px',
+    },
+    card: {
+      mobile: '12px',
+      tablet: '16px',
+      desktop: '16px',
+    },
+    field: {
+      mobile: '8px',
+      tablet: '12px',
+      desktop: '12px',
+    },
+  },
+
+  // ============================================================================
+  // TYPOGRAPHY
+  // ============================================================================
+  typography: {
+    fontFamily: {
+      heading: '"Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+      body: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+      mono: '"Fira Code", "Courier New", monospace',
+    },
+
+    fontSize: {
+      // Mobile First
+      mobile: {
+        h1: '28px',
+        h2: '24px',
+        h3: '20px',
+        h4: '18px',
+        h5: '16px',
+        h6: '14px',
+        body: '14px',
+        bodySmall: '13px',
+        caption: '12px',
+        overline: '11px',
+      },
+      // Tablet
+      tablet: {
+        h1: '32px',
+        h2: '28px',
+        h3: '24px',
+        h4: '20px',
+        h5: '18px',
+        h6: '16px',
+        body: '15px',
+        bodySmall: '14px',
+        caption: '13px',
+        overline: '12px',
+      },
+      // Desktop
+      desktop: {
+        h1: '40px',
+        h2: '32px',
+        h3: '28px',
+        h4: '24px',
+        h5: '20px',
+        h6: '18px',
+        body: '16px',
+        bodySmall: '15px',
+        caption: '14px',
+        overline: '13px',
+      },
+      // Projector
+      projector: {
+        h1: '48px',
+        h2: '40px',
+        h3: '32px',
+        h4: '28px',
+        h5: '24px',
+        h6: '20px',
+        body: '18px',
+        bodySmall: '16px',
+        caption: '15px',
+        overline: '14px',
+      },
+    },
+
+    fontWeight: {
+      light: '300',
+      regular: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      extrabold: '800',
+    },
+
+    lineHeight: {
+      tight: '1.2',
+      normal: '1.5',
+      relaxed: '1.75',
+      loose: '2',
+    },
+
+    letterSpacing: {
+      tighter: '-0.05em',
+      tight: '-0.025em',
+      normal: '0',
+      wide: '0.025em',
+      wider: '0.05em',
+      widest: '0.1em',
+    },
+  },
+
+  // ============================================================================
+  // COMPONENT SIZES
+  // ============================================================================
+  sizes: {
+    // Input & Button Heights
+    input: {
+      sm: '36px',
+      md: '44px',
+      lg: '52px',
+    },
+    button: {
+      sm: '36px',
+      md: '44px',
+      lg: '52px',
+    },
+
+    // Touch Targets (Minimum)
+    touchTarget: '44px',
+
+    // Table Row Heights
+    tableRow: {
+      compact: '48px',
+      comfortable: '56px',
+      spacious: '64px',
+    },
+
+    // Sidebar Widths
+    sidebar: {
+      expanded: '260px',
+      collapsed: '72px',
+      mobile: '280px',
+    },
+
+    // Header Heights
+    header: {
+      desktop: '64px',
+      mobile: '56px',
+    },
+
+    // Modal & Sheet Widths
+    modal: {
+      sm: '400px',
+      md: '600px',
+      lg: '800px',
+      xl: '1000px',
+    },
+    sheet: {
+      sm: '400px',
+      md: '600px',
+      lg: '800px',
+    },
+  },
+
+  // ============================================================================
+  // BORDER RADIUS
+  // ============================================================================
+  radius: {
+    none: '0px',
+    sm: '4px',
+    md: '6px',
+    lg: '8px',
+    xl: '12px',
+    '2xl': '16px',
+    '3xl': '24px',
+    full: '9999px',
+  },
+
+  // ============================================================================
+  // SHADOWS & ELEVATION
+  // ============================================================================
+  shadows: {
+    none: 'none',
+    sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+    md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+    lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+    xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+    '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+    inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+  },
+
+  // ============================================================================
+  // Z-INDEX LAYERS
+  // ============================================================================
+  zIndex: {
+    base: 0,
+    dropdown: 1000,
+    sticky: 1020,
+    fixed: 1030,
+    modalBackdrop: 1040,
+    modal: 1050,
+    popover: 1060,
+    tooltip: 1070,
+  },
+
+  // ============================================================================
+  // TRANSITIONS
+  // ============================================================================
+  transitions: {
+    duration: {
+      fast: '150ms',
+      base: '200ms',
+      slow: '300ms',
+      slower: '500ms',
+    },
+    timing: {
+      linear: 'linear',
+      ease: 'ease',
+      easeIn: 'ease-in',
+      easeOut: 'ease-out',
+      easeInOut: 'ease-in-out',
+    },
+  },
+
+  // ============================================================================
+  // OPACITY
+  // ============================================================================
+  opacity: {
+    0: '0',
+    10: '0.1',
+    20: '0.2',
+    30: '0.3',
+    40: '0.4',
+    50: '0.5',
+    60: '0.6',
+    70: '0.7',
+    80: '0.8',
+    90: '0.9',
+    100: '1',
+  },
+} as const;
+
+export type DesignTokens = typeof designTokens;
